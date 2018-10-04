@@ -13,8 +13,8 @@ int main(void)
     // iterate through number from right to left using mod and int division
     while (num > 0)
     {
-        sum += num % 10;
-        num /= 10;
+        sum += num % 10;    // sum = sum + num % 10;
+        num /= 10;          // num = num / 10;
     }
 
     // display result
