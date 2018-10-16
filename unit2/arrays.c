@@ -23,7 +23,7 @@ int main(void)
     }
 
     // calculate the average grade
-    float average = (float) sum / 5;    // case sum to a float to avoid integer division
+    float average = (float) sum / 5;    // cast sum to a float to avoid integer division
 
     // display the results
     printf("You averaged %.1f%% on your exams.\n", average);
