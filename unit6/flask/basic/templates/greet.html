@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Hello, {{ name }}!
+{% endblock %}
+
+{% block main %}
+<h1>Thanks, {{ name }}, for filling out this form!</h1>
+<p>
+    Click <a href="{{ url_for('process') }}">here</a> to fill it out again!
+</p>
+{% endblock %}

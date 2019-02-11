@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>This is CS50: {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <div id="header">
+            <p>Explore the following pages:
+                <a href="{{ url_for('greet') }}">CS50 AP</a> |
+                <a href="{{ url_for('p_and_r') }}">Parks and Rec</a> |
+                <a href="{{ url_for('dice') }}">Dice Roll</a> |
+                <a href="{{ url_for('process') }}">Name Greeter</a>
+            </p>
+        </div>
+        <div id="main">
+            {% block main %}{% endblock %}
+        </div>
+        <br><br>
+        <footer>Click <a href="{{ url_for('hello') }}">here</a> to return home.</footer>
+    </body>
+</html>

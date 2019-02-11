@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Vigenere
+{% endblock %}
+
+{% block main %}
+    <p>
+        Enter the text you would like to encrypt and the keyword:
+    </p>
+    <form action="{{ url_for('vigenere') }}" method="post">
+        <fieldset>
+        <div class="form-group">
+            <input name="plaintext" type="text" size="100" placeholder="Text to encrypt">
+            <input name="keyword" type="text" size="10" placeholder="Keyword">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-default" type="submit">
+                <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                Encrypt
+            </button>
+        </div>
+        </fieldset>
+    </form>
+
+{% endblock %}

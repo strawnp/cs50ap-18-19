@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Form
+{% endblock %}
+
+{% block main %}
+<form action="{{ url_for('process') }}" method="post">
+    <label for="name_field">
+        <input type="text" id="name_field" name="name" placeholder="Enter your name here">
+    </label>
+    <button action="submit">Submit</button>
+</form>
+{% endblock %}
