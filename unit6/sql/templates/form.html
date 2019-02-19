@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Form
+{% endblock %}
+
+{% block main %}
+<form action="{{ url_for('enroll') }}" method="post">
+    <label for="name_field">Name: </label>
+        <input type="text" id="name_field" name="name" placeholder="Enter your name here">
+    <br>
+    <label for="grade_field">Current Grade: </label>
+        <input type="number" id="grade_field" name="grade" placeholder="Enter your grade level here">
+    <br>
+    Desired Course:
+    <input type="radio" name="course_field" id="AP CS A" value="AP CS A">AP CS A</input>
+    <input type="radio" name="course_field" id="AP CSP" value="AP CSP">AP CSP</input>
+    <button action="submit">Submit</button>
+</form>
+{% endblock %}

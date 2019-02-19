@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>This is CS50: Course Registration</title>
+    </head>
+    <body>
+        <div id="header">
+            <p>Explore the following pages:
+                <a href="{{ url_for('enroll') }}">Register</a> |
+                <a href="{{ url_for('csa') }}">AP CS A</a> |
+                <a href="{{ url_for('csp') }}">AP CSP</a>
+            </p>
+        </div>
+        <div id="main">
+            {% block main %}{% endblock %}
+        </div>
+        <br><br>
+        <footer>Click <a href="{{ url_for('enroll') }}">here</a> to return home.</footer>
+    </body>
+</html>

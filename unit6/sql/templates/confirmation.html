@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Form
+{% endblock %}
+
+{% block main %}
+<h1>Registration Confirmed!</h1>
+
+<h3>Enrollment Details:</h3>
+<ul>
+    <li>Name: {{ name }}</li>
+    <li>Grade: {{ grade }}</li>
+    <li>Course: {{ course }}</li>
+</ul>
+{% endblock %}

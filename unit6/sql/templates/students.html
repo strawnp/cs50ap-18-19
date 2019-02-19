@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Form
+{% endblock %}
+
+{% block main %}
+<h1>Current Enrollment for {{ course }}</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for student in roster %}
+        <tr>
+            <td>{{ student["name"] }}</th>
+            <td>{{ student["grade"] }}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h4>Total Students: {{ size }}</h4>
+{% endblock %}
